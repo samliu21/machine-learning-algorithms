@@ -29,7 +29,7 @@ train_y = (y[0 : 3000].values == np.arange(0, 10, 1)).astype(int)
 test_y = (y[3000 : 5000].values == np.arange(0, 10, 1)).astype(int)
 
 """
-Increase m to 50 * 3000 to test speed of mini batches
+Increase m to 500 * 3000 to test speed of mini batches
 """
 train = np.tile(train, (300, 1))
 train_y = np.tile(train_y, (300, 1))
